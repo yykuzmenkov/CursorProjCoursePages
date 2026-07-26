@@ -10,7 +10,7 @@
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Sora:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -24,88 +24,122 @@
   </header>
 
   <main id="top">
-    <section class="hero" aria-labelledby="hero-brand">
-      <div class="hero-atmosphere" aria-hidden="true">
-        <div class="hero-grid"></div>
-        <div class="hero-orbit hero-orbit--a"></div>
-        <div class="hero-orbit hero-orbit--b"></div>
-        <div class="hero-node hero-node--1"></div>
-        <div class="hero-node hero-node--2"></div>
-        <div class="hero-node hero-node--3"></div>
+    <!-- Обложка: как слайд 1 презентации — кикер-чип, заголовок, чипы терминов, карточка метафор -->
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="kicker-chip">КУРС · ТРИ ЗАНЯТИЯ</p>
+      <h1 class="hero-title" id="hero-title">Управление проектом<br />через репозиторий</h1>
+      <p class="hero-sub">
+        <span class="chip chip--term">Cursor</span>
+        <span class="hero-plus">+</span>
+        <span class="chip chip--term">GitHub</span>
+        <span class="hero-note">· онлайн, без программирования</span>
+      </p>
+      <p class="hero-lead">Знания, решения и артефакты проекта — в одном информационном поле. Репозиторий как память, Cursor как интерфейс к ней.</p>
+      <div class="hero-cta">
+        <!-- Замените href на Telegram / форму записи -->
+        <a class="btn btn-primary" href="#zapis">Узнать о наборе</a>
+        <a class="btn btn-ghost" href="#programma">Смотреть программу</a>
       </div>
-      <div class="hero-content">
-        <p class="hero-brand" id="hero-brand">AIProjCourse</p>
-        <h1 class="hero-title">Управление проектом через репозиторий</h1>
-        <p class="hero-lead">Cursor + GitHub как единая память проекта: знания, решения и артефакты — в одном информационном поле.</p>
-        <div class="hero-cta">
-          <!-- Замените href на Telegram / форму записи -->
-          <a class="btn btn-primary" href="#zapis">Узнать о наборе</a>
-          <a class="btn btn-ghost" href="#programma">Смотреть программу</a>
-        </div>
-      </div>
+
+      <dl class="metaphor-card" aria-label="Метафоры курса">
+        <div><dt class="chip chip--term">репозиторий</dt><dd>память</dd></div>
+        <div><dt class="chip chip--term">Cursor</dt><dd>интерфейс</dd></div>
+        <div><dt class="chip chip--term">GitHub</dt><dd>история</dd></div>
+        <div><dt class="chip chip--term">артефакт</dt><dd>результат наружу</dd></div>
+      </dl>
     </section>
 
     <section class="section" id="dlya-kogo">
-      <p class="eyebrow">Аудитория</p>
+      <p class="kicker">01 · АУДИТОРИЯ</p>
       <h2>Для кого этот курс</h2>
       <p class="section-lead">Без предположения навыков программирования. Git и GitHub — как инструмент памяти и контроля, не как DevOps.</p>
-      <div class="audience">
-        <article class="audience-item">
-          <h3>Предприниматель</h3>
-          <p>Ведёте свой проект и устали от хаоса в чатах. Получаете память проекта, порядок и отчёты из актуального контекста.</p>
+      <div class="grid-2">
+        <article class="grid-item">
+          <span class="chip chip--num">01</span>
+          <div>
+            <h3>Предприниматель</h3>
+            <p>Ведёте свой проект и устали от хаоса в чатах. Получаете память проекта, порядок и отчёты из актуального контекста.</p>
+          </div>
         </article>
-        <article class="audience-item">
-          <h3>Консультант</h3>
-          <p>Ведете проекты для клиентов. Получаете передаваемый контекст, аудит изменений и понятную структуру под заказчика.</p>
+        <article class="grid-item">
+          <span class="chip chip--num">02</span>
+          <div>
+            <h3>Консультант</h3>
+            <p>Ведёте проекты для клиентов. Получаете передаваемый контекст, аудит изменений и понятную структуру под заказчика.</p>
+          </div>
         </article>
       </div>
     </section>
 
-    <section class="section section--tint" id="cennost">
-      <p class="eyebrow">Результат</p>
+    <section class="section" id="cennost">
+      <p class="kicker">02 · РЕЗУЛЬТАТ</p>
       <h2>Что меняется после курса</h2>
-      <ul class="value-list">
-        <li>
-          <strong>Контроль документации</strong>
-          <span>Документы собираются из актуального контекста, а не переписываются с нуля.</span>
-        </li>
-        <li>
-          <strong>Единый контекст для AI</strong>
-          <span>Не нужно каждый раз объяснять Cursor, кто участники и какие решения уже приняты.</span>
-        </li>
-        <li>
-          <strong>История поля</strong>
-          <span>Git фиксирует кто, когда и что изменил в знаниях проекта — не только в коде.</span>
-        </li>
-      </ul>
+      <div class="grid-2 grid-2--three">
+        <article class="grid-item">
+          <span class="chip chip--num">01</span>
+          <div>
+            <h3>Контроль документации</h3>
+            <p>Документы собираются из актуального контекста, а не переписываются с нуля.</p>
+          </div>
+        </article>
+        <article class="grid-item">
+          <span class="chip chip--num">02</span>
+          <div>
+            <h3>Единый контекст для AI</h3>
+            <p>Не нужно каждый раз объяснять Cursor, кто участники и какие решения уже приняты.</p>
+          </div>
+        </article>
+        <article class="grid-item">
+          <span class="chip chip--num">03</span>
+          <div>
+            <h3>История поля</h3>
+            <p>Git фиксирует, кто, когда и что изменил в знаниях проекта — не только в коде.</p>
+          </div>
+        </article>
+      </div>
     </section>
 
     <section class="section" id="programma">
-      <p class="eyebrow">Формат</p>
+      <p class="kicker">03 · ПРОГРАММА</p>
       <h2>Три онлайн-занятия</h2>
       <p class="section-lead">Около двух часов каждое. Между днями — самостоятельная работа над своим проектом и общий Telegram-чат группы.</p>
-      <ol class="days">
-        <li>
-          <span class="day-num">День 1</span>
-          <h3>Cursor и GitHub</h3>
-          <p>Инструменты и инфраструктура: чат vs агент, репозиторий как память, commit / push / pull, ритуал синхронизации.</p>
-        </li>
-        <li>
-          <span class="day-num">День 2</span>
-          <h3>Информационное поле</h3>
-          <p>Заводите свой проект: люди, решения, процессы, артефакты. Структура под ваш рабочий процесс — без готового шаблона.</p>
-        </li>
-        <li>
-          <span class="day-num">День 3</span>
-          <h3>Разбор проектов</h3>
-          <p>Мастермайнд: показ проектов, ответы на вопросы пяти дней практики, корректировка конфигурации.</p>
-        </li>
-      </ol>
-      <p class="timeline-note">День 1 → 2 дня практики → день 2 → 5 дней ведения проекта → день 3</p>
+
+      <!-- Таблица программы: как слайд 4 — шапка на SURFACE, тонкие линии, без zebra -->
+      <div class="program-table" role="table" aria-label="Программа курса">
+        <div class="pt-row pt-row--head" role="row">
+          <span role="columnheader">№</span>
+          <span role="columnheader">Занятие</span>
+          <span role="columnheader">Содержание</span>
+          <span role="columnheader">После занятия</span>
+        </div>
+        <div class="pt-row" role="row">
+          <span class="pt-num" role="cell">1</span>
+          <span class="pt-name" role="cell">Cursor и GitHub</span>
+          <span class="pt-topics" role="cell">Инструменты и инфраструктура: чат vs агент, репозиторий как память, <span class="term">commit</span> / <span class="term">push</span> / <span class="term">pull</span>, ритуал синхронизации.</span>
+          <span class="pt-practice" role="cell">2 дня практики</span>
+        </div>
+        <div class="pt-row" role="row">
+          <span class="pt-num" role="cell">2</span>
+          <span class="pt-name" role="cell">Информационное поле</span>
+          <span class="pt-topics" role="cell">Заводите свой проект: люди, решения, процессы, артефакты. Структура под ваш рабочий процесс — без готового шаблона.</span>
+          <span class="pt-practice" role="cell">5 дней ведения проекта</span>
+        </div>
+        <div class="pt-row" role="row">
+          <span class="pt-num" role="cell">3</span>
+          <span class="pt-name" role="cell">Разбор проектов</span>
+          <span class="pt-topics" role="cell">Мастермайнд: показ проектов, ответы на вопросы пяти дней практики, корректировка конфигурации.</span>
+          <span class="pt-practice" role="cell">—</span>
+        </div>
+      </div>
+
+      <div class="footer-card">
+        <span class="chip chip--label">ритм</span>
+        <p>День 1 → 2 дня практики → день 2 → 5 дней ведения проекта → день 3</p>
+      </div>
     </section>
 
-    <section class="section section--cta" id="zapis">
-      <p class="eyebrow">Запись</p>
+    <section class="section" id="zapis">
+      <p class="kicker">04 · ЗАПИСЬ</p>
       <h2>Присоединиться к набору</h2>
       <p class="section-lead">Набор открывается. Стоимость — по запросу. Оставьте заявку — пришлём даты ближайшего потока.</p>
       <dl class="meta-grid">
@@ -137,7 +171,8 @@
   </footer>
 
   <script>
-    const reveal = document.querySelectorAll(".section, .days li, .audience-item, .value-list li");
+    // Мягкое появление секций при прокрутке
+    const reveal = document.querySelectorAll(".section, .grid-item");
     const io = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
