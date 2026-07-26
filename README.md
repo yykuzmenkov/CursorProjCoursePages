@@ -7,4 +7,4 @@
 - **Дизайн:** «Document light v2» — светлая документная тема без акцентного цвета.
 - **Спецификация:** `CursorProjCourse/course/marketing/GITHUB-PAGES-SPEC.md` в рабочем репозитории [CursorProjCourse](https://github.com/yykuzmenkov/CursorProjCourse).
 
-Публикация: GitHub Pages, ветка `main`, папка `/`. Перед публикацией потока заменить placeholder-ссылку `https://t.me/` на реальный контакт записи.
+Публикация: GitHub Pages, ветка `main`, папка `/`. Контакты записи: Telegram [@yKuzmenkov](https://t.me/yKuzmenkov), почта ykuzmenkov@gmail.com.

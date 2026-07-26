@@ -468,6 +468,30 @@ h3 {
   font-size: 17px;
 }
 
+/* CTA-строка: кнопка «Записаться» + иконки почты и Telegram */
+.cta-row {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.btn--icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  padding: 0;
+  background: #FFF;
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.btn--icon:hover {
+  background: var(--surface);
+  color: var(--text);
+}
+
 /* —— Футер (§5.7) —— */
 .site-footer {
   background: var(--surface);
